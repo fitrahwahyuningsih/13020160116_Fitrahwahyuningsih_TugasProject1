@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Prisma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="Limas Segi Empat"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/Rumus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume = 1/3 x Alas x Tinggi"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Alas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alas"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/txt_alas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/txt_tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:text="HASIL" />
+
+    <TextView
+        android:id="@+id/txt_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:gravity="center"/>
+
+</LinearLayout>
